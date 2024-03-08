@@ -16,7 +16,8 @@ function getActivities() {
   const requestOptions = {
     method: "GET",
     headers: myHeaders,
-    redirect: "follow"
+    redirect: "follow",
+    mode:"no-cors"
   };
   
   fetch("https://mc.adobe.io/unilever2/target/activities/?limit=20", requestOptions)
