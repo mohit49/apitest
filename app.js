@@ -29,10 +29,10 @@ const requestOptions = {
   
 };
 
-fetch(`https://mc.adobe.io/unilever2/target/activities/?limit=20`, requestOptions)
-.then((response) => response.json())
-.then((result) => console.log(result))
-.catch((error) => console.error(error));
+fetch("https://mc.adobe.io/unilever2/target/activities/?limit=20", requestOptions)
+  .then((response) => response.text())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
 }
 
 getActivities();
